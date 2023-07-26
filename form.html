@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример работы с формой</title>
+</head>
+<body>
+    <form action="/test">
+        <input type="hidden" name="hid">
+        <div>
+            <label for="email">Email пользователя:</label>
+            <input type="email" placeholder="Ваш email" id="email" name="email">
+        </div> 
+        <div>
+            <label for="password">Пароль пользователя:</label>
+            <input type="password" placeholder="Пароль пользователя" id="password" name="password">
+        </div>
+        <label for="number">
+            Число:
+            <input type="number" placeholder="Число" id="number">
+        </label>
+        Выбор даты: <input type="date" name="" id="">
+        <!-- <button>Кнопка</button> -->
+        <button type="button">Кнопка</button>
+        <button type="reset">Сброс</button>
+        <!-- Альтернативный способ создания кнопки -->
+        <input type="button" value="Кнопка 2">
+        <input type="submit" value="Кнопка Submit">
+    </form>
+    <button>Кнопка вне формы</button>
+</body>
+</html>
