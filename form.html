@@ -11,29 +11,34 @@
 <body>
     <h1>Свяжитесь со мной</h1>
 
-    <form action="/test">
-        <input type="hidden" name="hid">
+    <form action="#">
         <div>
-            <label for="email">Email пользователя:</label>
+            <label for="email">Email</label>
             <input type="email" placeholder="Ваш email" id="email" name="email">
         </div>
+        <div class="field">
+            <label for="telegram">Telegram</label>
+            <input
+              type="text"
+              id="telegram"
+              placeholder="Введите свой telegram"
+              name="telegram"
+            />
+          </div>
         <div>
-            <label for="password">Пароль пользователя:</label>
-            <input type="password" placeholder="Пароль пользователя" id="password" name="password">
+            <label for="topic">Тема</label>
+            <select name="topic" id="topic" required>
+                <option value="buy">Приобретение курсов</option>
+                <option value="payments">Вопрос по оплате</option>
+                <option value="training">Заказ тренинга</option>
+              </select>
         </div>
-        <label for="number">
-            Число:
-            <input type="number" placeholder="Число" id="number">
-        </label>
-        Выбор даты: <input type="date" name="" id="">
-        <!-- <button>Кнопка</button> -->
-        <button type="button">Кнопка</button>
-        <button type="reset">Сброс</button>
-        <!-- Альтернативный способ создания кнопки -->
-        <input type="button" value="Кнопка 2">
-        <input type="submit" value="Кнопка Submit">
+        <div class="field">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" cols="30" rows="20"></textarea>
+        </div>
+        <button>Отправить</button>
     </form>
-    <button>Кнопка вне формы</button>
 </body>
 
 </html>
